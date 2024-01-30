@@ -15,3 +15,17 @@ Linux lo "yum install git -y" ane command tho local server lo install chestham i
 -> Manam github lo work start chesemundhu user name and user email id configure cheskovali local server or repository lo.
    Command to configure : git config --global user.name Pavankalyan
                           git config --global user.email sreeram.pavankalyan@gmail.com.
+-> "repo_1" anedhi manam create chesina repository in github. Dhanni local repository ki clone cheskunnam.
+    *)Ippudu aa repository loki velli manam oka file anedhi create cheskovali "cd repo_1" ->  "touch devops.1".
+    *)Ippudu ee file lo manam data enter cheyali "vi devops.1".
+    *)Manam data enter chesina, delete chesina elanti changes chesina kani manam 3 commands anevi run cheskovali ->
+       1)git add devops.1
+       2)git commit -m "you can give any description here"
+       3)git push origin main
+    *)push chesina tharvatha manaki github lo repository lo file upload aidhi with data. 
+    *)If another or seocond user working on the same code, If he wants to make any chages first he needs to pull the code by using command "git pull". Then he can start wokring.
+    *)If we want to know the status, Use the command "git status"
+    *)If we want to know the logs or previous ga emjarigindho theliyli ante use the command "git log".
+    *)If two users are working on the same code, If they are trying to push the code at a time into github, They will get conflicts.
+        To resolve that conflict use the command "git config pull.rebase false", Then use command "git pull", Then merge the data by using "vi devops.1".
+
